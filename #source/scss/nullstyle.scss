@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+Georgian:wght@400;700&display=swap');
+
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+}
+ul,
+ol,
+li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 16px;
+   color: #000;
+   background-color: white;
+}
+.wrapper {
+   transition: all 0.3s ease 0s;
+   min-height: 100%;
+   overflow: hidden;
+   scroll-behavior: smooth;
+}
+a:hover{
+   text-decoration: underline;
+}
+
+html.light body{
+   background-color: white;
+   color: #333;
+}
+
+html.dark {
+   .wrapper{
+      color: white;
+      background-color: #333;
+   }
+   .header .header__container .header__menu._active{
+      background-color: rgba($color: #333, $alpha: 0.7);
+   }
+   .header .header__container .header__menu._active a{
+      color: white;
+   }
+   main img{
+      filter: brightness(0.5);
+   }
+   h1{
+      background-color: rgba($color: black, $alpha: 0.15);
+   }
+   .header .header__menu a,html.dark .header__sign a{
+      color: white;
+   }
+   main .girl .girl__text, html.dark main .product .content__text, html.dark p{
+      color: white;
+   }
+   main .understand .understand__container .understand__title p{
+      color: white;
+      background-color: #333;
+   }
+   .header__container{
+      .menu__icon span,
+      .menu__icon::after,
+      .menu__icon::before{
+         background-color: white;
+      }
+      .page__action._container{
+         margin-right: 15px;
+         padding: 0;
+      }
+   }
+   main {
+      .product{
+         .content__text{
+            color: white;
+         }
+      }
+   }
+   p{
+      color: white;
+   }
+}
+html .header .header__container .header__menu._active #aaa{
+   color: #01996D;
+}
